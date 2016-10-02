@@ -17,7 +17,6 @@ def comprobarllaves(H):
 			return False
 	else:
 		return False
-		
 tam=random.randint(1,10)
 M=list()
 for i in range(tam):
