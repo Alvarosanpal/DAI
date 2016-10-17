@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from flask import Flask,request
+from flask import Flask,request, url_for
 import mandelbrot
 app = Flask(__name__)
 
@@ -15,16 +15,17 @@ def usuariozejilloe():
 def cualquiera(name):
     return "Aqui entra cualquier persona por ejemplo "+name
 
-@app.route("/carpeta")
-def carpeta():
+@app.route("/mandelbrot")
+def mandelbro():
 
-    x1 = request.args.get('x1')
-    y1 = request.args.get('y1')
-    x2 = request.args.get('x2')
-    y2 = request.args.get('y2')
-    witdh= request.args.get('witdh')
-    mandelbrot.renderizaMandelbrot(x1,y1,x2,y2,witdh,1,"foto")
-    return x1+" "+y1+" "+x2+" "+y2+" "+witdh
+    x1 = float(request.args.get('x1'))
+    y1 = float(request.args.get('y1'))
+    x2 = float(request.args.get('x2'))
+    y2 = float(request.args.get('y2'))
+    witdh= int(request.args.get('witdh'))
+    mandelbrot.renderizaMandelbrot(x1,y1,x2,y2,witdh,50,"static/foto.png")
+    image='<img src=' + url_for('static',filename='foto.png') + '>'
+    return image
 
 @app.route("/")
 def hello():
