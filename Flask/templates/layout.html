@@ -10,43 +10,72 @@
 </head>
 <body>
   <header class="row">
-  {% block header %}{% endblock %}
+    <div class="col-sm-1 ">
+      <img src=../static/logo.png class="text-center" width="100" height="100">
+    </div>
+
+    <div class="col-sm-11 text-center">
+      <h1>Geoke</h1>
+      <h4>{{contenido.subtitulo}}</h4>
+    </div>
+
   </header>
   <div class="row">
     <div class="col-sm-2 sidenav">
-      <form action="" method="post" name="Login_Form" class="form-signin">
+      {% if session['username'] %}
+
+          <div class="row text-center bol">
+            <div class="col-sm-2">
+             <span class="input-group-addon" id="sizing-addon1">
+                 <i class="fa fa-user">Welcome {{session['username']}}</i>
+             </span>
+          </div>
+          <button class="btn btn-sm btn-primary btn-block" type="Submit" onclick="location.href='/logout'">Logout</button>
+
+
+          </div>
+
+      {% else %}
+      <form action="/login" method="post" name="Login_Form" class="form-signin">
          <div class="row text-center bol">
 
            <div class="input-group">
             <span class="input-group-addon" id="sizing-addon1">
                 <i class="fa fa-user"></i>
             </span>
-           <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="">
+           <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="">
         </div>
         <div class="input-group">
             <span class="input-group-addon" id="sizing-addon1">
                 <i class="fa fa-lock"></i>
             </span>
-           <input type="password" class="form-control" name="Password" placeholder="Password" required="">
+           <input type="password" class="form-control" name="pass" placeholder="Password" required="">
         </div>
          <hr class="spartan">
         <button class="btn btn-sm btn-primary btn-block" name="Submit" value="Entrar" type="Submit">Entrar</button>
  <hr class="spartan">
+ </div>
       </form>
+       {% endif %}
       <ul class="nav text-center">
-        {% block menu %}
+        <li><a href="/registro">Registrarse</a></li>
+        <span class="input-group-addon" id="sizing-addon1">
+            <i class="fa fa-lock">Paginas visitadas</i>
+        </span>
+        {% block paginas %}
 
         {% endblock %}
       </ul>
-    </div>
+
   </div>
     <div class="col-sm-9 sidenav">
-      {% block content %}{% endblock %}
+      {% block contenido %}{% endblock %}
     </div>
   </div >
   <footer class="col-sm-12 text-center">
+    <h4>Esta es el pie de pagina</h4>
     {% block footer %}{% endblock %}
-  <footer>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
