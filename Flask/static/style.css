@@ -1,0 +1,14 @@
+
+.nav li a:focus {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.nav li a:hover {
+    background-color: #01A9DB;
+    color: white;
+}
+header{
+  background-image: url(header.png);
+
+}

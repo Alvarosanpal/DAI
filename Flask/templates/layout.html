@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/style.css" />
+  <title>{% block title %}{% endblock %} - My página</title>
+
+</head>
+<body>
+  <header class="row">
+  {% block header %}{% endblock %}
+  </header>
+  <div class="row">
+    <div class="col-sm-2 sidenav">
+      <form action="" method="post" name="Login_Form" class="form-signin">
+         <div class="row text-center bol">
+
+           <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon1">
+                <i class="fa fa-user"></i>
+            </span>
+           <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon1">
+                <i class="fa fa-lock"></i>
+            </span>
+           <input type="password" class="form-control" name="Password" placeholder="Password" required="">
+        </div>
+         <hr class="spartan">
+        <button class="btn btn-sm btn-primary btn-block" name="Submit" value="Entrar" type="Submit">Entrar</button>
+ <hr class="spartan">
+      </form>
+      <ul class="nav text-center">
+        {% block menu %}
+
+        {% endblock %}
+      </ul>
+    </div>
+  </div>
+    <div class="col-sm-9 sidenav">
+      {% block content %}{% endblock %}
+    </div>
+  </div >
+  <footer class="col-sm-12 text-center">
+    {% block footer %}{% endblock %}
+  <footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

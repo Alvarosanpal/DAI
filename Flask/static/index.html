@@ -6,8 +6,42 @@
 <ul>
   <li><a href="http://localhost:8080/user/pepe">Página de Pepe</a></li>
     <li><a href="http://localhost:8080/user/zejillo">Página de Zejillo</a></li>
-    Para cualquier usuario seria http://localhost:8080/user/ (nombre que querais)
-  <li><a href="http://localhost:8080/user/maria">Página de Maria</a></li>
+
+  <li>Para cualquier usuario <input type=tex id="name"><button type="button" onclick="myFunction()">Mostrar pagina</button></li>
 </ul>
+<h3>Mandelbrot</h3>
+<form action="http://localhost:8080/mandelbrot">
+  <table>
+    <tr>
+      <td>  <label>X1:</label></td>
+      <td><input type=text name="x1" placeholder="-5"></td>
+    </tr>
+    <tr>
+      <td>  <label>Y1:</label></td>
+      <td><input type=text name="y1" placeholder="-5"></td>
+    </tr>
+    <tr>
+      <td>  <label>X2:</label></td>
+      <td><input type=text name="x2" placeholder="5"></td>
+    </tr>
+    <tr>
+      <td>  <label>Y2:</label></td>
+      <td><input type=text name="y2" placeholder="5"></td>
+    </tr>
+    <tr>
+      <td>  <label>Anchura</label></td>
+      <td><input type=text name="witdh" placeholder="250"></td>
+    </tr>
+  </table>
+<input type=submit>
+</form>
+
+<h3>Creando Imagenes Dinamicas</h3>
+<a href="http://localhost:8080/svg">SVG</a>
+<script>
+function myFunction() {
+    location.href="http://localhost:8080/user/"+document.getElementById("name").value;
+}
+</script>
 </body>
 </html>
