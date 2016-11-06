@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block title %}Datos personales{% endblock %}
+
+{% block contenido %}
+    {% if session['username'] %}
+  <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+
+      <div class="panel-body">
+        <form id="signupform" role="form" method="post" action="/actualizar" class="form-horizontal">
+          <div id="signupalert" style="display:none" class="alert alert-danger">
+            <p>Error:</p><span></span>
+          </div>
+            {% for key, value in usu.items(): %}
+            <div class="form-group">
+              <label for={{key}} class="col-md-3 control-label">{{key}}</label>
+              <div class="col-md-9 form-group">
+                <input {% if key=='password' %}type="password" {% else %} type="text" {% endif %}name={{key}} placeholder={{key}} class="form-control" value="{{value}}" {% if not actualizar %} disabled {% endif %}/>
+              </div>
+            </div>
+            {% endfor %}
+
+          <div class="form-group">
+            <!-- Button-->
+            <div class="col-md-offset-3 col-md-9 form-group">
+              {% if not actualizar %}
+              <button id="btn-signup" type="button" onclick="location.href='/modifica'" class="btn btn-info" ><i class="icon-hand-right"></i>Modificar</button>
+              {% else %}
+              <button id="btn-signup" type="submit" class="btn btn-info" ><i class="icon-hand-right"></i>Actualizar</button>
+              {% endif %}
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+   {% endif %}
+{% endblock %}

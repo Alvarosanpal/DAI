@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/style.css" />
+  <title>{% block title %}{% endblock %} - My página</title>
+
+</head>
+<body>
+  <header class="row">
+    <div class="col-sm-1 ">
+      <a href="/"><img src=../static/logo.png class="text-center" width="100" height="100"></a>
+    </div>
+
+    <div class="col-sm-11 text-center">
+      <h1>Geoke</h1>
+      <h4>{{contenido.subtitulo}}</h4>
+    </div>
+
+  </header>
+  <div class="row">
+    <div class="col-sm-2 sidenav">
+      {% if session['username'] %}
+
+          <div class="row text-center bol">
+            <div class="col-sm-2">
+             <span class="input-group-addon" id="sizing-addon1">
+                 <i class="fa fa-user">Welcome {{session['username']}}</i>
+             </span>
+          </div>
+          <button class="btn btn-sm btn-primary btn-block" type="Submit" onclick="location.href='/logout'">Logout</button>
+
+
+          </div>
+
+      {% else %}
+      <form action="/login" method="post" name="Login_Form" class="form-signin">
+         <div class="row text-center bol">
+
+           <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon1">
+                <i class="fa fa-user"></i>
+            </span>
+           <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon1">
+                <i class="fa fa-lock"></i>
+            </span>
+           <input type="password" class="form-control" name="pass" placeholder="Password" required="">
+        </div>
+         <hr class="spartan">
+        <button class="btn btn-sm btn-primary btn-block" name="Submit" value="Entrar" type="Submit">Entrar</button>
+ <hr class="spartan">
+ </div>
+      </form>
+       {% endif %}
+      <ul class="nav text-center">
+        {% if session['username'] %}
+          <li><a href="/profile">Datos personales</a></li>
+          {% endif %}
+        <li><a href="/registro">Registrarse</a></li>
+        {% if session['username'] %}
+        <span class="input-group-addon" id="sizing-addon1">
+            <i class="fa fa-lock">Paginas visitadas</i>
+        </span>
+        {% for row in contenido.paginas %}
+          <li><a href={{row.link}}>{{ row.text}}</a></li>
+        {% endfor %}
+        {% endif %}
+      </ul>
+
+  </div>
+    <div class="col-sm-9 sidenav container-fluid">
+      {% block contenido %}{% endblock %}
+    </div>
+  </div >
+  <footer class="col-sm-12 text-center">
+    <h4>Esta es el pie de pagina</h4>
+    {% block footer %}{% endblock %}
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -5,77 +5,50 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="stylesheet" href="../static/style.css" />
-  <title>{% block title %}{% endblock %} - My página</title>
+  <title>{% block title %}{% endblock %}</title>
 
 </head>
 <body>
-  <header class="row">
-    <div class="col-sm-1 ">
-      <img src=../static/logo.png class="text-center" width="100" height="100">
-    </div>
+<div class="container">
+  <nav class="navbar navbar-default" role="navigation">
+      <!-- El logotipo y el icono que despliega el menú se agrupan
+           para mostrarlos mejor en los dispositivos móviles -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Desplegar navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><image src="../static/find.png"></a>
+      </div>
 
-    <div class="col-sm-11 text-center">
-      <h1>Geoke</h1>
-      <h4>{{contenido.subtitulo}}</h4>
-    </div>
+      <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+           otro elemento que se pueda ocultar al minimizar la barra -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
 
-  </header>
-  <div class="row">
-    <div class="col-sm-2 sidenav">
-      {% if session['username'] %}
-
-          <div class="row text-center bol">
-            <div class="col-sm-2">
-             <span class="input-group-addon" id="sizing-addon1">
-                 <i class="fa fa-user">Welcome {{session['username']}}</i>
-             </span>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar">
           </div>
-          <button class="btn btn-sm btn-primary btn-block" type="Submit" onclick="location.href='/logout'">Logout</button>
-
-
+          <div class="form-group">
+            <button type="submit" class="btn btn-default">Buscar</button>
           </div>
+        </form>
 
-      {% else %}
-      <form action="/login" method="post" name="Login_Form" class="form-signin">
-         <div class="row text-center bol">
+      </div>
+    </nav>
 
-           <div class="input-group">
-            <span class="input-group-addon" id="sizing-addon1">
-                <i class="fa fa-user"></i>
-            </span>
-           <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="">
-        </div>
-        <div class="input-group">
-            <span class="input-group-addon" id="sizing-addon1">
-                <i class="fa fa-lock"></i>
-            </span>
-           <input type="password" class="form-control" name="pass" placeholder="Password" required="">
-        </div>
-         <hr class="spartan">
-        <button class="btn btn-sm btn-primary btn-block" name="Submit" value="Entrar" type="Submit">Entrar</button>
- <hr class="spartan">
- </div>
-      </form>
-       {% endif %}
-      <ul class="nav text-center">
-        <li><a href="/registro">Registrarse</a></li>
-        <span class="input-group-addon" id="sizing-addon1">
-            <i class="fa fa-lock">Paginas visitadas</i>
-        </span>
-        {% block paginas %}
-
-        {% endblock %}
-      </ul>
-
-  </div>
-    <div class="col-sm-9 sidenav">
+    <div class="col-sm-9 sidenav container-fluid">
       {% block contenido %}{% endblock %}
     </div>
-  </div >
+
   <footer class="col-sm-12 text-center">
     <h4>Esta es el pie de pagina</h4>
     {% block footer %}{% endblock %}
   </footer>
+</div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

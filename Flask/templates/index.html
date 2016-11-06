@@ -1,10 +1,31 @@
 {% extends "layout.html" %}
-{% block title %}Primera pagina{% endblock %}
+{% block title %}Index{% endblock %}
 
+{% block contenido %}
+{{ pagination.info }}
+<nav class="navbar navbar-light bg-faded">
+{{ pagination.links }}
+</nav>
+<div class="table-responsive">
+ <table class="table">
+   <thead>
+     <tr>
+    {% for row in todo[0] %}
+       <th>{{row}}</th>
+    {% endfor %}
+  </tr>
+ </thead>
+ <tbody>
 
-{% block paginas %}
-
-  {% for row in contenido.paginas %}
-    <li><a href={{row.link}}>{{ row.text}}</a></li>
+  {% for row in todo %}
+  <tr>
+    {% for r in row.values() %}
+      <th>{{r}}</th>
+     {% endfor %}
   {% endfor %}
+</tr>
+ </tbody>
+</table>
+</div>
+{{ pagination.links }}
 {% endblock %}

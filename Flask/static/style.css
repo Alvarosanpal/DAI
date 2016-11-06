@@ -12,3 +12,7 @@ header,footer{
   background-image: url(header.png);
 
 }
+.navbar-brand > img {
+  height: 100%;
+  width: auto;
+}
