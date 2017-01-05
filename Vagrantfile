@@ -13,6 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder "htdocs", "/var/www/html"
   config.vm.synced_folder "Ejercicios", "/Ejercicios"
   config.vm.synced_folder "Flask", "/Flask"
+  config.vm.synced_folder "Django", "/Django"
   config.vm.provision "shell", path: "flask.sh"
 
   config.vm.provider "virtualbox" do |v|

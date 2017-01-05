@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+{% block title %}RSS{% endblock %}
+
+{% block contenido %}
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+{% endblock %}
+{% block script %}
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $.ajax({
+        url: "/static/trends.json",
+        dataType: "json",
+        cache: false,
+      }).done(function(data) {
+        var tweet=[]
+        var i=0
+        var trends=data[0].trends
+        var total=trends.length
+
+        for (var i=0; i< total;i++) {
+
+            var tre={name:trends[i].name,y:trends[i].tweet_volume}
+            tweet.push(tre)
+        }
+        // Build the chart
+
+          Highcharts.chart('container', {
+              chart: {
+                  plotBackgroundColor: null,
+                  plotBorderWidth: null,
+                  plotShadow: false,
+                  type: 'pie'
+              },
+              title: {
+                  text: 'España: Trending Topic'
+              },
+              tooltip: {
+                  pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+              },
+              plotOptions: {
+                  pie: {
+                      allowPointSelect: true,
+                      cursor: 'pointer',
+                      dataLabels: {
+                          enabled: false
+                      },
+                      showInLegend: true
+                  }
+              },
+              series: [{
+                  name: 'Brands',
+                  colorByPoint: true,
+                  data: tweet
+              }]
+          });
+      });
+    });
+
+
+</script>
+{% endblock %}

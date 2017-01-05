@@ -4,6 +4,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
   <link rel="stylesheet" href="../static/style.css" />
   <title>{% block title %}{% endblock %}</title>
 
@@ -39,7 +41,7 @@
       </div>
     </nav>
 
-    <div class="col-sm-9 sidenav container-fluid">
+    <div class="col-sm-12 sidenav container">
       {% block contenido %}{% endblock %}
     </div>
 
@@ -52,6 +54,168 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var restaurante="";
+      var btn=0;
+        $("#form").submit(function(e) {
+            e.preventDefault(); // avoid to execute the actual submit of the form.
+            if(btn==0)
+              insertar()
+            else
+              actualizar()
 
+          });
+
+      function insertar(){
+              $.ajax({
+                type: "POST",
+                url: "/add",
+                data: $("#form").serialize(), // serializes the form's elements.
+                 dataType: "json",
+                success: function(data)
+                {
+                  var table = $('#example').DataTable();
+                  table.row.add( {
+                    "restaurant_id":       data.restaurant_id,
+                    "name":   data.name,
+                    "cuisine":     data.cuisine,
+                    "borough": data.borough
+                  } ).draw()
+                  $('#myModal').modal('toggle');
+                }
+              });
+
+      }
+      function actualizar(){
+            $.ajax({
+              type: "POST",
+              url: "/update",
+              data: $("#form").serialize(), // serializes the form's elements.
+               dataType: "json",
+              success: function(data)
+              {
+                $(restaurante[0]).html(data.restaurant_id)
+                $(restaurante[1]).html(data.name)
+                $(restaurante[2]).html(data.cuisine)
+                $(restaurante[3]).html(data.borough)
+
+                $('#myModal').modal('toggle');
+              }
+            });
+      }
+
+
+           $('#example').DataTable({
+               "ajax": "/actualiza",
+               "columns":[
+
+                 {"data":"restaurant_id"},
+                 {"data":"name"},
+                  {"data":"cuisine"},
+                 {"data":"borough"}
+               ],
+               "language": {
+                  "lengthMenu": "Mostrando _MENU_ restaurantes por página",
+                  "zeroRecords": "No hay ningun restaurante, lo siento",
+                  "info": "Esta es la página _PAGE_ de _PAGES_",
+                  "search":         "Buscar:"
+                }
+
+           });
+
+           $('#example').on('click','tbody tr',function(){
+             restaurante=$(this).find('td');
+             $('#example').find('.success').removeClass('success');
+             $(this).addClass('success');
+
+           });
+           $('#remove').on('click',function(){
+             var id=$(restaurante[0]).html();
+              $.get("/eliminar", { 'id':id },function(data,status){
+                if(data=="1"){
+                  var table = $('#example').DataTable();
+                  table.row($('#example').find('.success')).remove().draw();
+                  restaurante="";
+                }
+              });
+
+           });
+           $('#modi').on('click',function(e){
+             btn=1
+             if(restaurante!=""){
+               $('#titulo').html("Modificar restaurante");
+               $('#restaurant_id')[0].value=$(restaurante[0]).html();
+               $('#name')[0].value=$(restaurante[1]).html();
+               $('#cuisine')[0].value=$(restaurante[2]).html();
+               $('#borough')[0].value=$(restaurante[3]).html();
+               $('#btn-signup').html("Modificar");
+
+             }else{
+                 $('#myModal').modal('toggle');
+             }
+
+
+           });
+           $('#add').on('click',function(){
+             btn=0
+             $('#titulo').html("Añadir restaurante nuevo");
+             $('#name')[0].value="";
+             $('#cuisine')[0].value="";
+             $('#borough')[0].value="";
+             $('#btn-signup').html("Añadir");
+
+
+           });
+         });
+
+  </script>
+  <!-- Modal -->
+   <div class="modal fade" id="myModal" role="dialog">
+     <div class="modal-dialog">
+
+       <!-- Modal content-->
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <h4 id="titulo" class="modal-title">Añadir nuevo restaurante</h4>
+         </div>
+         <div id="modal" class="modal-body">
+           <form id="form" class="form-horizontal" role="form" >
+              <input id="restaurant_id" type="hidden" class="form-control" name="restaurant_id">
+             <div class="form-group">
+                 <label for="name" class="col-md-3 control-label">Nombre</label>
+                 <div class="col-md-9">
+                     <input id="name" type="text" class="form-control" name="name" placeholder="Nombre">
+                 </div>
+             </div>
+             <div class="form-group">
+                 <label for="cuisine" class="col-md-3 control-label">Cocina</label>
+                 <div class="col-md-9">
+                     <input type="text" id="cuisine" class="form-control" name="cuisine" placeholder="Cocina">
+                 </div>
+             </div>
+             <div class="form-group">
+                 <label for="borough" class="col-md-3 control-label">Ciudad</label>
+                 <div class="col-md-9">
+                     <input type="text" class="form-control" id="borough" name="borough" placeholder="Ciudad">
+                 </div>
+             </div>
+             <div class="form-group">
+                 <!-- Button -->
+                 <div class="col-md-offset-3 col-md-9">
+                     <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i>Añadir</button>
+                 </div>
+             </div>
+           </form>
+         </div>
+       </div>
+
+     </div>
+   </div>
+
+ </div>
 </body>
 </html>

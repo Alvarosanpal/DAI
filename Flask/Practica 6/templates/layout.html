@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../static/style.css" />
+  <title>{% block title %}{% endblock %}</title>
+
+</head>
+<body>
+<div class="container">
+  <nav class="navbar navbar-default" role="navigation">
+      <!-- El logotipo y el icono que despliega el menú se agrupan
+           para mostrarlos mejor en los dispositivos móviles -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Desplegar navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+
+      <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+           otro elemento que se pueda ocultar al minimizar la barra -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/" style="color:yellow"><img src="http://static.wixstatic.com/media/ecc39367d8f88da9baf5635590f856b2.wix_mp_256" alt="" width=25 height=25></a></li>
+          <li><a href="/graficos" style="color:yellow"><img src="https://pbs.twimg.com/profile_images/538262176134221824/Vx4_Psj1_400x400.png" alt="" width=25 height=25></a></li>
+          <li><a href="/maps" style="color:yellow"><img src="https://www.gstatic.com/images/branding/product/1x/maps_64dp.png" alt="" width=25 height=25></a></li>
+
+          <li><a href="/twitter" style="color:yellow"><img src="http://www.pngall.com/wp-content/uploads/2016/07/Twitter-PNG-Clipart.png" alt="" width=25 height=25></a></li>
+
+
+        </ul>
+
+      </div>
+    </nav>
+    {% block contenido %}{% endblock %}
+
+
+  <footer class="col-sm-12 text-center">
+    <h4>Esta es el pie de pagina</h4>
+    {% block footer %}{% endblock %}
+  </footer>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+  {% block script %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block title %}RSS{% endblock %}
+
+{% block contenido %}
+
+<div id="twitter">
+</div>
+
+<!--<a class="twitter-follow-button"
+  href="https://twitter.com/makelele29">
+Follow @TwitterDev</a>
+<a href="https://twitter.com/makelele29" class="twitter-timeline"></a>-->
+{% endblock %}
+{% block script %}
+<script src="https://platform.twitter.com/widgets.js" async="">
+
+</script>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $.ajax({
+      url: "/static/twitter.json",
+      dataType: "json",
+      cache: false,
+    }).done(function(data) {
+      var j=0;
+      $('#twitter').append("<div class='row' id='row"+j+"' >")
+      for(i=0;i<data.value.length;i++){
+
+        $('#row'+j).append("<div class='col-md-4' id='tweet"+i+"' </div>")
+        twttr.widgets.createTweet(
+          data.value[i].id,
+          document.getElementById("tweet"+i),
+          {
+            theme: 'light'
+          }
+        )
+        if((i+1)%3==0){
+            $('#row'+j).append("</div>")
+            j++
+            $('#twitter').append("<div class='row' id='row"+j+"' >")
+          }
+        }
+            $('#row'+j).append("</div>")
+
+    });
+  });
+
+</script>
+
+
+{% endblock %}

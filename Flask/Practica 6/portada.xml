@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title><![CDATA[Portada de EL PAÍS]]></title>
+  <link><![CDATA[http://elpais.com/rss/elpais/portada.xml]]></link>
+  <description><![CDATA[Portada de EL PAÍS]]></description>
+  <lastBuildDate>Tue, 29 Nov 2016 14:36:35 +0100</lastBuildDate>
+  <pubDate>Tue, 29 Nov 2016 14:36:35 +0100</pubDate>
+  <language>es</language>
+  <copyright><![CDATA[Copyright 2016, Ediciones EL PAÍS]]></copyright>
+  <ttl>5</ttl>
+  <image>
+      <url>http://ep00.epimg.net/iconos/v1.x/v1.0/logos/cabecera_portada.png</url>
+      <title>Logotipo de EL PAÍS</title>
+      <link>http://elpais.com/</link>
+  </image>
+  <item>
+    <title><![CDATA[El accidente de avión del Chapecoense deja al menos 75 muertos en Colombia]]></title>
+    <link><![CDATA[http://elpais.com/internacional/2016/11/29/america/1480398356_994950.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/internacional/2016/11/29/america/1480398356_994950.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[Ana Marcos, Javier Lafuente]]></dc:creator>
+    <description><![CDATA[En la aeronave, que se estrelló antes de llegar a Medellín, viajaban 81 personas]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 14:20:15 +0100]]></pubDate>
+    <category><![CDATA[Accidente avión Chapecoense]]></category>
+    <category><![CDATA[Chapecoense]]></category>
+    <category><![CDATA[Accidentes aéreos]]></category>
+    <category><![CDATA[Aviones]]></category>
+    <category><![CDATA[Colombia]]></category>
+    <category><![CDATA[Accidentes]]></category>
+    <category><![CDATA[Fútbol]]></category>
+    <category><![CDATA[Brasil]]></category>
+    <category><![CDATA[Aerolíneas]]></category>
+    <category><![CDATA[Equipos]]></category>
+    <category><![CDATA[Sudamérica]]></category>
+    <category><![CDATA[Latinoamérica]]></category>
+    <category><![CDATA[Sucesos]]></category>
+    <category><![CDATA[Empresas transporte]]></category>
+    <category><![CDATA[Transporte aéreo]]></category>
+    <category><![CDATA[América]]></category>
+    <category><![CDATA[Deportes]]></category>
+    <category><![CDATA[Transporte]]></category>
+    <category><![CDATA[Empresas]]></category>
+    <category><![CDATA[Economía]]></category>
+    <content:encoded><![CDATA[<p>Un avión que transportaba a los jugadores del <a href="https://www.facebook.com/AChapeF/">club de fútbol Chapecoense</a> de Brasil ha sufrido un accidente la noche del lunes cuando se aproximaba al aeropuerto José María Córdova de la ciudad colombiana de Medellín, donde iba a disputar el partido de ida de la final de la Copa Sudamericana con el Atlético Nacional. El alcalde de la localidad, Federico Gutiérrez, ha confirmado que 75 de las 81 personas que viajaban en el aparato han muerto. En la aeronave, de la compañía boliviana LAMIA, volaban un total de 81 personas: 22 futbolistas; 28 acompañantes, entre equipo técnico y directivos; 22 periodistas y 9 miembros de la tripulación. Siete personas han sido rescatadas con vida de los restos del aparato, una de ellas casi cinco horas después del siniestro, pero finalmente uno de estos supervivientes pereció en el hospital.</p><p><a href="http://elpais.com/internacional/2016/11/29/america/1480398356_994950.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/29/portada/1480398506_986361_1480401628_miniatura_normal.jpg" length="28486" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/internacional/imagenes/2016/11/29/america/1480398356_994950_1480407964_noticia_normal.jpg" length="91296" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480398484-ba5206e3375a82ae4ebc6499616ead4f]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[La investigación apunta a un fallo eléctrico o de combustible]]></title>
+    <link><![CDATA[http://elpais.com/internacional/2016/11/29/actualidad/1480405678_435601.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/internacional/2016/11/29/actualidad/1480405678_435601.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[El País]]></dc:creator>
+    <description><![CDATA[Sigue al minuto las novedades de siniestro de aviación ocurrido hoy en Colombia]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 14:26:26 +0100]]></pubDate>
+    <category><![CDATA[Accidente avión Chapecoense]]></category>
+    <category><![CDATA[Bolivia]]></category>
+    <category><![CDATA[Chapecoense]]></category>
+    <category><![CDATA[Accidentes aéreos]]></category>
+    <category><![CDATA[Aviones]]></category>
+    <category><![CDATA[Accidentes]]></category>
+    <category><![CDATA[Colombia]]></category>
+    <category><![CDATA[Brasil]]></category>
+    <category><![CDATA[Fútbol]]></category>
+    <category><![CDATA[Aerolíneas]]></category>
+    <category><![CDATA[Equipos]]></category>
+    <category><![CDATA[Sucesos]]></category>
+    <category><![CDATA[Sudamérica]]></category>
+    <category><![CDATA[Latinoamérica]]></category>
+    <category><![CDATA[Empresas transporte]]></category>
+    <category><![CDATA[Transporte aéreo]]></category>
+    <category><![CDATA[América]]></category>
+    <category><![CDATA[Deportes]]></category>
+    <category><![CDATA[Transporte]]></category>
+    <category><![CDATA[Empresas]]></category>
+    <category><![CDATA[Economía]]></category>
+    <content:encoded><![CDATA[<p>Un avión que transportaba a <a href="http://internacional.elpais.com/internacional/2016/11/29/america/1480398356_994950.html">los jugadores del club de fútbol Chapecoense de Brasil ha sufrido un accidente la noche del lunes</a> cuando se aproximaba al aeropuerto José María Córdova de la ciudad colombiana de Medellín. 75 personas han muerto y seis han sobrevivido. En la aeronave, de la compañía boliviana LAMIA, viajaban miembros del equipo y periodistas, además de nueve miembros de la tripulación. <a href="http://brasil.elpais.com/brasil/2016/11/29/deportes/1480407077_927048.html">Leia a informação do acidente de avião do Chapecoense em português</a>.</p><p><a href="http://elpais.com/internacional/2016/11/29/actualidad/1480405678_435601.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/internacional/imagenes/2016/11/29/actualidad/1480405678_435601_1480424609_noticia_normal.jpg" length="105129" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480405678-cafa35913336db143f0c389701d4144f]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[El vídeo que subió a Snapchat un jugador del Chapecoense antes del accidente de avión]]></title>
+    <link><![CDATA[http://elpais.com/elpais/2016/11/29/videos/1480421863_898477.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/elpais/2016/11/29/videos/1480421863_898477.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[El País]]></dc:creator>
+    <description><![CDATA[Alan Ruschel, uno de los supervivientes del siniestro, subió una grabación a la red social a bordo del avión antes de partir hacia Colombia]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 14:26:05 +0100]]></pubDate>
+    <category><![CDATA[Accidente avión Chapecoense]]></category>
+    <category><![CDATA[Chapecoense]]></category>
+    <category><![CDATA[Aviones]]></category>
+    <category><![CDATA[Accidentes aéreos]]></category>
+    <category><![CDATA[Accidentes]]></category>
+    <category><![CDATA[Colombia]]></category>
+    <category><![CDATA[Aerolíneas]]></category>
+    <category><![CDATA[Equipos]]></category>
+    <category><![CDATA[Fútbol]]></category>
+    <category><![CDATA[Brasil]]></category>
+    <category><![CDATA[Empresas transporte]]></category>
+    <category><![CDATA[Sucesos]]></category>
+    <category><![CDATA[Transporte aéreo]]></category>
+    <category><![CDATA[Sudamérica]]></category>
+    <category><![CDATA[Latinoamérica]]></category>
+    <category><![CDATA[Deportes]]></category>
+    <category><![CDATA[Transporte]]></category>
+    <category><![CDATA[Empresas]]></category>
+    <category><![CDATA[América]]></category>
+    <category><![CDATA[Economía]]></category>
+    <content:encoded><![CDATA[<p>El futbolista brasileño <a href="http://internacional.elpais.com/internacional/2016/11/29/actualidad/1480413487_125038.html">Alan Ruschel, superviviente del accidente aéreo del Chapecoense</a>, subió un vídeo a Snapchat antes de que el avión despegara. El jugador aparece sentado junto a su compañero Danilo, quien también ha sobrevivido al impacto.</p><p><a href="http://elpais.com/elpais/2016/11/29/videos/1480421863_898477.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/29/videos/1480421863_898477_1480422058_miniatura_normal.jpg" length="8652" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/29/videos/1480421863_898477_1480422058_portadilla_normal.jpg" length="13419" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480421863-57fc87d425993ce3b738de92f84dc7a7]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[Cuatro futbolistas, una azafata y un periodista, supervivientes del accidente de avión en Colombia]]></title>
+    <link><![CDATA[http://elpais.com/internacional/2016/11/29/actualidad/1480413487_125038.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/internacional/2016/11/29/actualidad/1480413487_125038.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[El País]]></dc:creator>
+    <description><![CDATA[Las autoridades confirman que han trasladado a un hospital a los heridos en el vuelo de Chapecoense]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 14:36:06 +0100]]></pubDate>
+    <category><![CDATA[Accidente avión Chapecoense]]></category>
+    <category><![CDATA[Chapecoense]]></category>
+    <category><![CDATA[Accidentes aéreos]]></category>
+    <category><![CDATA[Aviones]]></category>
+    <category><![CDATA[Accidentes]]></category>
+    <category><![CDATA[Colombia]]></category>
+    <category><![CDATA[Aerolíneas]]></category>
+    <category><![CDATA[Equipos]]></category>
+    <category><![CDATA[Fútbol]]></category>
+    <category><![CDATA[Sucesos]]></category>
+    <category><![CDATA[Sudamérica]]></category>
+    <category><![CDATA[Latinoamérica]]></category>
+    <category><![CDATA[Empresas transporte]]></category>
+    <category><![CDATA[Transporte aéreo]]></category>
+    <category><![CDATA[América]]></category>
+    <category><![CDATA[Deportes]]></category>
+    <category><![CDATA[Transporte]]></category>
+    <category><![CDATA[Empresas]]></category>
+    <category><![CDATA[Economía]]></category>
+    <content:encoded><![CDATA[<p>El accidente del avión que transportaba este martes a los jugadores del <a href="https://www.facebook.com/AChapeF/">club de fútbol Chapecoense</a> de Brasil ha dejado, al menos, 75 muertos. Las autoridades locales, en medio de una gran confusión, ha afirmado que siete personas han sido rescatadas con vida, aunque alguna ha muerto posteriormente. El aparato se ha estrellado, sobre las cinco y media de la mañana hora peninsular española, cuando se aproximaba al aeropuerto José María Córdova de la ciudad colombiana de Medellín. Y estos son los nombres de las personas confirmadas que han llegado con vida a un hospital.</p><p><a href="http://elpais.com/internacional/2016/11/29/actualidad/1480413487_125038.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/internacional/imagenes/2016/11/29/actualidad/1480413487_125038_1480413788_miniatura_normal.jpg" length="20398" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/internacional/imagenes/2016/11/29/actualidad/1480413487_125038_1480413788_noticia_normal.jpg" length="63275" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480413487-5433dcd6bc7413bfa8995d80dea4d615]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[La Complutense mantiene la Facultad de Filosofía]]></title>
+    <link><![CDATA[http://elpais.com/ccaa/2016/11/29/madrid/1480413876_269948.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/ccaa/2016/11/29/madrid/1480413876_269948.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[Elisa Silió]]></dc:creator>
+    <description><![CDATA[Ciencias de la Información y Documentación estarán juntas y Políticas con Trabajo Social]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 13:35:04 +0100]]></pubDate>
+    <category><![CDATA[Carlos Andradas]]></category>
+    <category><![CDATA[UCM]]></category>
+    <category><![CDATA[Universidad]]></category>
+    <category><![CDATA[Comunidad de Madrid]]></category>
+    <category><![CDATA[Educación superior]]></category>
+    <category><![CDATA[Sistema educativo]]></category>
+    <category><![CDATA[Educación]]></category>
+    <category><![CDATA[España]]></category>
+    <content:encoded><![CDATA[<p>La Universidad Complutense de Madrid finalmente <a href="http://ccaa.elpais.com/ccaa/2016/06/14/madrid/1465897034_459416.html">no va a fusionar en una las facultades de Filosofía y Filología. Ambas compartirán "una estructura gerencial"</a>. Así lo está explicando en estos momentos el rector de la Universidad, Carlos Andradas, en la Junta de Gobierno convocada para estudiar el Plan Rector de Reordenación de Estructuras que está resultando muy polémico.</p><p><a href="http://elpais.com/ccaa/2016/11/29/madrid/1480413876_269948.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/29/portada/1480414492_722498_1480418662_miniatura_normal.jpg" length="77914" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/ccaa/imagenes/2016/11/29/madrid/1480413876_269948_1480414752_noticia_normal.jpg" length="83893" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/ccaa/imagenes/2016/11/29/madrid/1480413876_269948_1480414752_noticia_grande.jpg" length="85753" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480414453-ab03985c11cbe8d201fefefa9a07bbff]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[Méndez de Vigo anuncia un plan para que el creador cobre aunque se jubile]]></title>
+    <link><![CDATA[http://elpais.com/cultura/2016/11/29/actualidad/1480415314_579653.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/cultura/2016/11/29/actualidad/1480415314_579653.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[Borja Hermoso]]></dc:creator>
+    <description><![CDATA[El ministro se compromete en el Congreso a crear una fiscalía contra la piratería, impulsar una ley de Mecenazgo y a bajar el IVA al 10% en espectáculos en directo]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 13:10:44 +0100]]></pubDate>
+    <category><![CDATA[Íñigo Méndez de Vigo]]></category>
+    <category><![CDATA[Ministerio de Cultura]]></category>
+    <category><![CDATA[Ley Mecenazgo]]></category>
+    <category><![CDATA[Legislación española]]></category>
+    <category><![CDATA[Congreso Diputados]]></category>
+    <category><![CDATA[Parlamento]]></category>
+    <category><![CDATA[Ministerios]]></category>
+    <category><![CDATA[Administración Estado]]></category>
+    <category><![CDATA[Legislación]]></category>
+    <category><![CDATA[Cultura]]></category>
+    <category><![CDATA[Administración pública]]></category>
+    <category><![CDATA[Justicia]]></category>
+    <category><![CDATA[Política]]></category>
+    <content:encoded><![CDATA[<p>El ministro de Educación, Cultura y Deporte, <a href="http://cultura.elpais.com/cultura/2016/11/18/actualidad/1479453817_154472.html">Íñigo Méndez de Vigo</a>, se ha comprometido este martes en el Congreso a impulsar un <a href="http://cultura.elpais.com/cultura/2015/12/04/actualidad/1449236534_603910.html">estatuto del creador</a>, que permitiría <a href="http://cultura.elpais.com/cultura/2016/01/21/actualidad/1453404951_724842.html">cobrar el 100% de sus trabajos a los escritores jubilados</a>, tal y como sucede en buena parte de los países europeos. La medida se pondrá en marcha en colaboración con el Ministerio de Empleo y Seguridad Social con el objeto de proteger la figura del creador y permitir que <a href="http://cultura.elpais.com/cultura/2016/02/04/actualidad/1454594152_481080.html">siga creando sin menoscabo de su edad</a>. Este estatuto es una respuesta a las numerosas protestas y reivindicaciones de los creadores, y en especial, de los escritores, al no poder apenas cobrar por su trabajo creativo debido a que ya estaban recibiendo una pensión.</p><p><a href="http://elpais.com/cultura/2016/11/29/actualidad/1480415314_579653.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/29/portada/1480418090_495739_1480418742_miniatura_normal.jpg" length="21922" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/cultura/imagenes/2016/11/29/actualidad/1480415314_579653_1480415404_noticia_normal.jpg" length="73992" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480415314-ded3af51bd50b33b7a9685abd2475d0c]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[El ‘Govern’ destina 5,8 millones al referéndum en sus presupuestos]]></title>
+    <link><![CDATA[http://elpais.com/ccaa/2016/11/29/catalunya/1480418581_399682.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/ccaa/2016/11/29/catalunya/1480418581_399682.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[Lluís Pellicer, Dani Cordero]]></dc:creator>
+    <description><![CDATA[La Generalitat aumenta los fondos para la Hacienda catalana y las 'embajadas']]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 13:42:42 +0100]]></pubDate>
+    <category><![CDATA[Oriol Junqueras]]></category>
+    <category><![CDATA[Carles Puigdemont]]></category>
+    <category><![CDATA[Presupuestos autonómicos]]></category>
+    <category><![CDATA[Referéndum]]></category>
+    <category><![CDATA[Finanzas autonómicas]]></category>
+    <category><![CDATA[Cataluña]]></category>
+    <category><![CDATA[Elecciones]]></category>
+    <category><![CDATA[Finanzas públicas]]></category>
+    <category><![CDATA[España]]></category>
+    <category><![CDATA[Política]]></category>
+    <category><![CDATA[Finanzas]]></category>
+    <content:encoded><![CDATA[<p><a href="http://ccaa.elpais.com/ccaa/2016/11/17/catalunya/1479415361_222152.html" target="_blank">Los Presupuestos de la Generalitat</a> para el año que viene tendrán una cantidad asignada para organizar el referéndum sobre la independencia anunciado por el presidente de la Generalitat, Carles Puigdemont. En total, las cuentas que este mediodía presenta el vicepresidente del Ejecutivo catalán, <a href="http://elpais.com/tag/oriol_junqueras/a" target="_blank">Oriol Junqueras</a>, prevén 5,8 millones de euros en concepto de "procesos electorales y participativos". Junqueras, que ha entregado el proyecto a la presidenta del Parlament, Carme Forcadell, ha asegurado que espera que el debate acabe esta vez en la aprobación "del mejor presupuesto posible". Los Presupuestos, además, prevén un aumento de las dotaciones para las llamadas <em>estructuras de estado:</em> 57,4 millones de euros para la Agencia Triutaria de Cataluña y 8,8 millones adicionales para abrir nuevas <em>embajadas</em> en el extranjero. </p><p><a href="http://elpais.com/ccaa/2016/11/29/catalunya/1480418581_399682.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/ccaa/imagenes/2016/11/29/catalunya/1480418581_399682_1480418675_miniatura_normal.jpg" length="18693" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/ccaa/imagenes/2016/11/29/catalunya/1480418581_399682_1480423322_noticia_normal.jpg" length="56195" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480419001-95744f696558a71ceadafc0225002bfd]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[Arrabal, Trueba y el viento de la intransigencia]]></title>
+    <link><![CDATA[http://elpais.com/cultura/2016/11/28/actualidad/1480357842_304904.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/cultura/2016/11/28/actualidad/1480357842_304904.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[Juan Cruz]]></dc:creator>
+    <description><![CDATA[Los aires más imbéciles de los nacionalistas intentan boicotear la película de Trueba 'La reina de España']]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 13:32:03 +0100]]></pubDate>
+    <category><![CDATA[Fernando Trueba]]></category>
+    <category><![CDATA[Fernando Arrabal]]></category>
+    <category><![CDATA[Patria]]></category>
+    <category><![CDATA[Nacionalismo]]></category>
+    <category><![CDATA[Cine español]]></category>
+    <category><![CDATA[Franquismo]]></category>
+    <category><![CDATA[Fascismo]]></category>
+    <category><![CDATA[Dictadura]]></category>
+    <category><![CDATA[Ultraderecha]]></category>
+    <category><![CDATA[Cine]]></category>
+    <category><![CDATA[Ideologías]]></category>
+    <category><![CDATA[Historia contemporánea]]></category>
+    <category><![CDATA[Historia]]></category>
+    <category><![CDATA[Política]]></category>
+    <content:encoded><![CDATA[<p>Cuando en pleno franquismo <a href="http://elpais.com/elpais/2016/02/13/opinion/1455385895_086089.html">Fernando Arrabal</a> se cagó en la <a href="http://cultura.elpais.com/cultura/2016/08/29/babelia/1472488716_680855.html">Patria</a>, el huracán de la intransigencia puso ante el pelotón de fusilamiento público al autor de <a href="http://elpais.com/diario/2000/08/25/revistaverano/967154401_850215.html"><em>El cementerio de automóviles</em></a>, que era (y es) un alma de Dios, un personaje que removió el teatro español y lo hizo aún más español desde Francia. Mezclado con <a href="http://elpais.com/elpais/2016/11/02/tentaciones/1478100887_577208.html">Goya</a>, <a href="http://elpais.com/especiales/2016/lorca-y-el-flamenco/">Lorca</a> y <a href="http://elpais.com/elpais/2016/10/14/estilo/1476463340_245470.html">Dalí</a>, su escritura pánica era algo más que surrealismo, era el desgarramiento de un hombre que había perdido a su madre, su pasado y su tierra, en manos de los propietarios del país, y no sólo de la tierra, sino de las mentes del país.</p><p><a href="http://elpais.com/cultura/2016/11/28/actualidad/1480357842_304904.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/cultura/imagenes/2016/11/28/actualidad/1480357842_304904_1480358363_miniatura_normal.jpg" length="15859" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/cultura/imagenes/2016/11/28/actualidad/1480357842_304904_1480358363_noticia_normal.jpg" length="19459" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480357842-a65380ff697c6a21a9a34831b4b64da3]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[El Mar Menor es un “desierto de fango”]]></title>
+    <link><![CDATA[http://elpais.com/elpais/2016/11/29/ciencia/1480415993_088103.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/elpais/2016/11/29/ciencia/1480415993_088103.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[Marya G. Nieto]]></dc:creator>
+    <description><![CDATA[Un estudio concluye que se ha perdido el 85% de las praderas marinas en dos años]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 13:53:27 +0100]]></pubDate>
+    <category><![CDATA[Mar Menor]]></category>
+    <category><![CDATA[Vegetación marina]]></category>
+    <category><![CDATA[Lagunas]]></category>
+    <category><![CDATA[Flora]]></category>
+    <category><![CDATA[Zonas húmedas]]></category>
+    <category><![CDATA[Espacios naturales]]></category>
+    <category><![CDATA[Problemas ambientales]]></category>
+    <category><![CDATA[Especies]]></category>
+    <category><![CDATA[Medio ambiente]]></category>
+    <content:encoded><![CDATA[<p dir="ltr">El 85% de las praderas marinas que había en 2014 en el Mar Menor ya no existen. En su lugar, no hay nada. “Ahora es un desierto de fango”, cuenta <a href="http://www.mu.ieo.es/index.php?option=com_content&view=article&id=103&lang=es" target="_blank">Juan Manuel Ruiz</a>, investigador principal de un equipo del <a href="http://www.ieo.es/" target="_blank">Instituto Español de Oceanografía</a> (IEO), que junto con la <a href="http://www.asociacionanse.org/" target="_blank">ONG ANSE</a> lleva estudiando la vegetación marina de la laguna desde 2013. Un año después, en 2014, el equipo realizó un mapa detallado de las praderas y mediante una serie de inmersiones y mediciones, los investigadores encontraron 13.780 hectáreas de vegetación. Aquello significaba que las praderas estaban resistiendo el impacto de las actividades humanas. Sin embargo, ante el cambio que se produjo en las aguas del Mar Menor en 2015, el equipo ha vuelto a sumergirse para comprobar cómo la mayor parte de la vegetación marina ha desaparecido.</p><p><a href="http://elpais.com/elpais/2016/11/29/ciencia/1480415993_088103.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/29/ciencia/1480415993_088103_1480419570_miniatura_normal.jpg" length="18252" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/29/ciencia/1480415993_088103_1480419824_noticia_normal.jpg" length="70825" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480420554-65bba4cc5ca2ac80eebfba2ae28ed0d0]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[Así vive el hombre que modernizó Barcelona]]></title>
+    <link><![CDATA[http://elpais.com/elpais/2016/11/28/icon/1480333191_497335.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/elpais/2016/11/28/icon/1480333191_497335.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[Daniel García López]]></dc:creator>
+    <description><![CDATA[El arquitecto y urbanista Oriol Bohigas, 90 años, fue el primero en mudarse al Barrio Gótico antes de la epidemia Airbnb. Hoy, su piso es un oasis]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 07:52:56 +0100]]></pubDate>
+    <category><![CDATA[Arquitectos]]></category>
+    <category><![CDATA[Barcelona]]></category>
+    <category><![CDATA[Arquitectura]]></category>
+    <category><![CDATA[Gente]]></category>
+    <category><![CDATA[Arte]]></category>
+    <category><![CDATA[España]]></category>
+    <content:encoded><![CDATA[<p>Intentar que <a href="http://ccaa.elpais.com/ccaa/2014/06/12/catalunya/1402603100_040321.html" target="_blank">Oriol Bohigas</a> (Barcelona, 1925) hable sobre su casa sin saltar instantáneamente a su gran pasión, el urbanismo, es misión casi imposible. Ni siquiera con una pregunta general como qué lugar ocupa la comodidad en una vivienda. “Antes hay que ver qué entendemos por comodidad, si por comodidad del espacio doméstico o por comodidad del espacio urbano. La reivindicación de esa confortabilidad, la urbana, es la lucha que viene después de aquella de los habitantes. Es un tema que me interesa mucho. Hay tantos alcaldes y tantos especuladores que han trastocado los límites urbanos, que ahora hay que rehacerlos entre todos”, dice con su conocido tono militante desde su espacioso piso principal, con vistas a la Plaza Real de Barcelona.</p><p><a href="http://elpais.com/elpais/2016/11/28/icon/1480333191_497335.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/28/icon/1480333191_497335_1480333623_miniatura_normal.jpg" length="15467" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/28/icon/1480333191_497335_1480335017_noticia_normal.jpg" length="19501" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480402284-cb5bdcf8211ac110c1c10c1dbbc472b7]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[La lista de los pueblos más bonitos crece]]></title>
+    <link><![CDATA[http://elpais.com/elviajero/2016/11/28/album/1480360230_685813.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/elviajero/2016/11/28/album/1480360230_685813.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[El Viajero]]></dc:creator>
+    <description><![CDATA[13 municipios españoles se unirán en 2017 a las 44 que integran actualmente esta asociación]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 07:17:30 +0100]]></pubDate>
+    <category><![CDATA[Yanguas]]></category>
+    <category><![CDATA[Villanueva de los Infantes]]></category>
+    <category><![CDATA[El Quijote]]></category>
+    <category><![CDATA[Hita]]></category>
+    <category><![CDATA[Ujué]]></category>
+    <category><![CDATA[Puebla de Sanabria]]></category>
+    <category><![CDATA[Sajazarra]]></category>
+    <category><![CDATA[Miranda del Castañar]]></category>
+    <category><![CDATA[Grazalema]]></category>
+    <category><![CDATA[Fornalutx]]></category>
+    <category><![CDATA[Covarrubias]]></category>
+    <category><![CDATA[Chinchón]]></category>
+    <category><![CDATA[Capileira]]></category>
+    <category><![CDATA[Caleruega]]></category>
+    <category><![CDATA[Turismo rural]]></category>
+    <category><![CDATA[Miguel de Cervantes]]></category>
+    <category><![CDATA[Rutas turísticas]]></category>
+    <category><![CDATA[Medio rural]]></category>
+    <category><![CDATA[Patrimonio histórico]]></category>
+    <category><![CDATA[Viajes]]></category>
+    <category><![CDATA[Andalucía]]></category>
+    <category><![CDATA[Ofertas turísticas]]></category>
+    <category><![CDATA[Turismo]]></category>
+    <category><![CDATA[España]]></category>
+    <enclosure url="http://ep00.epimg.net/elviajero/imagenes/2016/11/28/album/1480360230_685813_1480360287_miniatura_normal.jpg" length="8450" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/elviajero/imagenes/2016/11/28/album/1480360230_685813_1480360287_portadilla_normal.jpg" length="34734" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480360230-b727d02e64d003413629fc5aa2e95c57]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[Chernóbil se cubre de un inmenso caparazón para estar a salvo un siglo]]></title>
+    <link><![CDATA[http://elpais.com/internacional/2016/11/28/actualidad/1480287615_816277.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/internacional/2016/11/28/actualidad/1480287615_816277.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[Álvaro Sánchez]]></dc:creator>
+    <description><![CDATA[Un gigantesco arco de metal hará de barrera contra las radiaciones del reactor afectado por el accidente nuclear]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 12:39:50 +0100]]></pubDate>
+    <category><![CDATA[Chernóbil]]></category>
+    <category><![CDATA[Accidente Fukushima]]></category>
+    <category><![CDATA[Accidentes nucleares]]></category>
+    <category><![CDATA[Comisión Europea]]></category>
+    <category><![CDATA[Ucrania]]></category>
+    <category><![CDATA[Europa este]]></category>
+    <category><![CDATA[Accidentes]]></category>
+    <category><![CDATA[Sucesos]]></category>
+    <category><![CDATA[UE]]></category>
+    <category><![CDATA[Europa]]></category>
+    <category><![CDATA[Organizaciones internacionales]]></category>
+    <category><![CDATA[Relaciones exteriores]]></category>
+    <content:encoded><![CDATA[<p>Treinta años después del peor accidente nuclear que ha sufrido la humanidad, la central de Chernóbil se cubre de un inmenso caparazón de acero para evitar fugas de radiación durante el próximo siglo. El temor ante los efectos de nuevos escapes tóxicos de la agrietada estructura colocada justo después del desastre por la Unión Soviética una vez cumplidos sus 30 años de vida útil ha llevado a un grupo de donantes internacionales impulsados por el Banco Europeo para la Reconstrucción y el Desarrollo a implicarse de lleno en garantizar su seguridad. Juntos han reunido los <a href="http://internacional.elpais.com/internacional/2015/03/20/actualidad/1426877028_196436.html">1.500 millones de euros que ha costado la nueva armadura</a>, la mayor estructura móvil fabricada hasta ahora, de un tamaño casi equivalente al de dos campos de fútbol, con la Comisión Europea como mayor contribuyente con 431 millones.</p><p><a href="http://elpais.com/internacional/2016/11/28/actualidad/1480287615_816277.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/29/portada/1480406837_530387_1480413770_miniatura_normal.jpg" length="39226" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/internacional/imagenes/2016/11/28/actualidad/1480287615_816277_1480415903_noticia_normal.jpg" length="73044" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/internacional/imagenes/2016/11/28/actualidad/1480287615_816277_1480347842_noticia_grande.jpg" length="79083" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480402713-315595efbcee96fc7acf9523c49808d4]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[El nuevo atletismo español no quiere a Sergio Sánchez]]></title>
+    <link><![CDATA[http://elpais.com/deportes/2016/11/29/actualidad/1480413997_413276.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/deportes/2016/11/29/actualidad/1480413997_413276.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[Carlos Arribas]]></dc:creator>
+    <description><![CDATA[Chapado inaugura su presidencia con el veto al leonés, con un pasado de dopaje, en el Europeo de cross]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 11:15:22 +0100]]></pubDate>
+    <category><![CDATA[Raúl Chapado]]></category>
+    <category><![CDATA[Sergio Sánchez]]></category>
+    <category><![CDATA[Cross]]></category>
+    <category><![CDATA[Dopaje]]></category>
+    <category><![CDATA[Justicia deportiva]]></category>
+    <category><![CDATA[Atletismo]]></category>
+    <category><![CDATA[Competiciones]]></category>
+    <category><![CDATA[Deportes]]></category>
+    <category><![CDATA[Justicia]]></category>
+    <content:encoded><![CDATA[<p>Sergio Sánchez, pese a su gran forma, no formará parte de la selección española que disputará el Europeo de cross el domingo 11 de diciembre en Cerdeña (Italia). Así lo ha decidido el director técnico de la federación, Ramón Cid, que hará oficial hoy la selección. Es la primera decisión importante y mediática del atletismo español bajo la égida de Raúl Chapado, elegido presidente de la Federación el sábado pasado. El atleta leonés, de 34 años, cumplió en noviembre de 2015 dos años de sanción por dopaje. Desde el Mundial de Moscú, en agosto de 2013, no ha vuelto a competir con la camiseta de la selección.</p><p><a href="http://elpais.com/deportes/2016/11/29/actualidad/1480413997_413276.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="http://ep00.epimg.net/deportes/imagenes/2016/11/29/actualidad/1480413997_413276_1480414172_miniatura_normal.jpg" length="16497" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/deportes/imagenes/2016/11/29/actualidad/1480413997_413276_1480414279_noticia_normal.jpg" length="25855" type="image/jpeg"  />
+    <enclosure url="http://ep00.epimg.net/deportes/imagenes/2016/11/29/actualidad/1480413997_413276_1480414171_portadilla_grande.jpg" length="165498" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480413997-931a82dbcc3b80a2c3a88ac823b9f644]]></comments>
+  </item>
+  <item>
+    <title><![CDATA[Charla con El Drogas en Facebook Live]]></title>
+    <link><![CDATA[http://elpais.com/elpais/2016/11/29/actualidad/1480421540_538181.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[http://elpais.com/elpais/2016/11/29/actualidad/1480421540_538181.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <description><![CDATA[]]></description>
+    <pubDate><![CDATA[Tue, 29 Nov 2016 14:16:13 +0100]]></pubDate>
+    <enclosure url="http://ep00.epimg.net/elpais/imagenes/2016/11/29/actualidad/1480421540_538181_1480421584_portada_normal.jpg" length="18768" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1480421540-68b364e49e9108fbbb2d865949bb9bf5]]></comments>
+  </item>
+</channel>
+</rss>
