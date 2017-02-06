@@ -1,4 +1,8 @@
 {% extends "base.html" %}
+{% block title %}
+Restaurantes
+{% endblock %}
+
 {% block content %}
 
  <table id="example" class="table table-hover table-bordered" cellspacing="0" width="100%">
@@ -27,6 +31,188 @@
  </tfoot>
 
 </table>
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+ <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+ <script type="text/javascript">
+   $(document).ready(function(){
+     var restaurante="";
+     var btn=0;
+     $("#aForm").submit(function(e) {
+         e.preventDefault(); // avoid to execute the actual submit of the form.
+         if(btn==0)
+           insertar()
+         else
+           actualizar()
+
+       });
+
+     function insertar(){
+       $.ajax({
+         type: "POST",
+         url: "/restaurantes/addRestaurantes/",
+         data: $("#aForm").serialize(), // serializes the form's elements.
+         dataType: "json",
+         headers: {'X-CSRFToken': '{{ csrf_token }}'},
+         success: function(data)
+         {
+           data=data.mensaje
+
+           var table = $('#example').DataTable();
+           table.row.add( {
+             "restaurant_id":       data.restaurant_id,
+             "name":   data.name,
+             "cuisine": '',
+             "borough": data.borough
+           } ).draw()
+           $('#myModal').modal('toggle');
 
 
+        },error: function(data)
+        {
+         alertas(data.responseJSON)
+       }
+       });
+
+     }
+     function alertas(data){
+       $('#alert').html("");
+       $("#alert").append('<div class="alert alert-warning"><strong>Warning!</strong> '+JSON.stringify(data)+'</div>')
+
+     }
+     function actualizar(){
+           $.ajax({
+             type: "POST",
+             url: "/restaurantes/actualiza/",
+             data: $("#aForm").serialize(), // serializes the form's elements.
+            dataType: "json",
+             success: function(data)
+             {
+               data=data.mensaje
+               $(restaurante[0]).html(data.restaurant_id)
+               $(restaurante[1]).html(data.name)
+               $(restaurante[3]).html(data.borough)
+
+               $('#myModal').modal('toggle');
+             },error:function(data){
+              alertas(data.responseJSON)
+             }
+
+           });
+     }
+
+
+          $('#example').DataTable({
+              "ajax": "/restaurantes/cargarrestaurantes",
+              "columns":[
+
+                {"data":"restaurant_id"},
+                {"data":"name"},
+                 {"data":"cuisine"},
+                {"data":"borough"}
+              ],
+              "language": {
+                 "lengthMenu": "Mostrando _MENU_ restaurantes por página",
+                 "zeroRecords": "No hay ningun restaurante, lo siento",
+                 "info": "Esta es la página _PAGE_ de _PAGES_",
+                 "search":         "Buscar:"
+               }
+
+          });
+
+          $('#example').on('click','tbody tr',function(){
+            restaurante=$(this).find('td');
+            $('#example').find('.success').removeClass('success');
+            $(this).addClass('success');
+
+          });
+          $('#remove').on('click',function(){
+            var id=$(restaurante[0]).html();
+             $.get("/restaurantes/eliminar/", { 'id':id },function(data,status){
+
+                 var table = $('#example').DataTable();
+                 table.row($('#example').find('.success')).remove().draw();
+                 restaurante="";
+
+             });
+
+          });
+          $('#modi').on('click',function(e){
+            btn=1
+            if(restaurante!=""){
+              $('#titulo').html("Modificar restaurante");
+              $('#id_id_restaurante')[0].value=$(restaurante[0]).html();
+              $('#id_nombre')[0].value=$(restaurante[1]).html();
+              $('#id_ciudad')[0].value=$(restaurante[3]).html();
+              $('#btn-signup').html("Modificar");
+              $('#alert').html("");
+            }else{
+                $('#myModal').modal('toggle');
+            }
+
+
+          });
+          $('#add').on('click',function(){
+            btn=0
+            $('#titulo').html("Añadir restaurante nuevo");
+            $('#id_nombre')[0].value="";
+            $('#id_id_restaurante')[0].value="";
+            $('#id_ciudad')[0].value="";
+            $('#id_codigo_postal')[0].value="";
+            $('#alert').html("");
+            $('#btn-signup').html("Añadir");
+
+
+          });
+        });
+
+ </script>
+ <!-- Modal -->
+   <div class="modal fade" id="myModal" role="dialog">
+     <div class="modal-dialog">
+
+       <!-- Modal content-->
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <h4 id="titulo" class="modal-title">Añadir nuevo restaurante</h4>
+         </div>
+         <div id="modal" class="modal-body">
+           <form  id="aForm"  class="form-horizontal" role="form">
+             {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-group" id="alert"></div>
+            <!-- <input id="id_restaurante" for="id_restaurante" type="hidden" class="form-control" name="id_restaurante">
+             <div class="form-group">
+                 <label for="nombre" class="col-md-3 control-label">Nombre</label>
+                 <div class="col-md-9">
+                     <input id="name" type="text" class="form-control" name="nombre" placeholder="Nombre">
+                 </div>
+             </div>
+             <div class="form-group">
+                 <label for="ciudad" class="col-md-3 control-label">Ciudad</label>
+                 <div class="col-md-9">
+                     <input type="text" id="cuisine" class="form-control" name="ciudad" >
+                 </div>
+             </div>
+             <div class="form-group">
+                 <label for="direccion" class="col-md-3 control-label">Cocina</label>
+                 <div class="col-md-9">
+                     <input type="text" id="address" class="form-control" name="direccion" >
+                 </div>
+             </div>-->
+
+             <div class="form-group">
+                 <!-- Button -->
+                 <div class="col-md-offset-3 col-md-9">
+                     <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i>Añadir</button>
+                 </div>
+             </div>
+           </form>
+         </div>
+       </div>
+
+     </div>
+   </div>
+
+ </div>
 {% endblock %}
